@@ -1,0 +1,121 @@
+body {
+  background-color: #e6f9e6; /* Verde claro como fundo */
+  margin: 0; /* Remove margens padrão */
+  font-family: 'Arial', sans-serif; /* Fonte padrão */
+  display: flex; /* Flex para centralizar */
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  min-height: 100vh; /* Garante que ocupe toda a altura da tela */
+}
+
+.container {
+  display: flex;
+  flex-direction: column; /* Mantém a direção em coluna */
+  align-items: center; /* Centraliza todos os itens na horizontal */
+  width: 100%; /* Ocupa toda a largura disponível */
+  max-width: 800px; /* Limite para a largura da tela */
+  padding: 40px; /* Espaço interno */
+  text-align: center; /* Centraliza o texto do contêiner */
+  background: white; /* Fundo branco para contraste */
+  border-radius: 16px; /* Bordas arredondadas */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+h1 {
+  font-size: 36px; /* Tamanho do texto do título */
+  color: #4CAF50; /* Verde mais escuro para o texto */
+  margin-bottom: 20px; /* Espaçamento inferior */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Sombra sutil no texto */
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Cartões menores */
+  gap: 16px; /* Espaçamento entre os cartões */
+  width: 100%; /* Ocupa toda a largura disponível */
+  justify-items: center; /* Centraliza os itens da grid */
+  margin-top: 20px; /* Espaço acima da grade de cartões */
+}
+
+.card {
+  background: #f9f9f9; /* Fundo dos cartões */
+  border-radius: 10px; /* Bordas arredondadas */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  padding: 16px; /* Espaçamento interno */
+  text-align: left; /* Alinha texto à esquerda */
+  width: 100%; /* Ocupa toda a largura do grid */
+  max-width: 180px; /* Largura máxima dos cartões normais */
+}
+
+.card.sistema-gestao {
+  max-width: 100%; /* O cartão do Sistema de Gestão ocupará mais espaço */
+  background: #d1e7dd; /* Fundo diferente para destaque */
+  padding: 24px; /* Maior espaçamento interno */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Sombra mais forte */
+}
+
+.registered-cases {
+  margin-top: 40px; /* Espaço acima dos casos registrados */
+  width: 100%; /* Largura total para o contêiner dos casos registrados */
+}
+
+/* Estilo dos botões */
+.container button {
+  background-color: #3cbd3c; /* Verde claro */
+  color: white;
+  font-weight: bold;
+  padding: 8px 16px; /* Tamanho menor para os botões */
+  border: none; /* Remove bordas */
+  border-radius: 5px; /* Borda arredondada */
+  cursor: pointer; /* Cursor de clique */
+  transition: all 0.3s ease; /* Suaviza transições */
+  font-size: 0.9rem; /* Tamanho da fonte menor */
+}
+
+.container button:hover {
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 8px; /* Sombra ao passar o mouse */
+  transform: translateY(-2px); /* Move o botão levemente para cima */
+}
+
+/* Posicionamento dos botões */
+.button-container {
+  display: flex; /* Usar flexbox para posicionamento */
+  justify-content: space-between; /* Espaça os botões */
+  margin-top: 20px; /* Espaço acima dos botões */
+}
+
+.button-container button {
+  flex: none; /* Mantém o tamanho do botão */
+  margin: 0 8px; /* Margem entre os botões */
+}
+
+/* Estilo específico para os botões "Postar" e "Novo" */
+.post-button {
+  background-color: #4CAF50; /* Verde */
+}
+
+
+.new-button {
+  background-color: #3cbd3c; /* Verde claro */
+  padding: 6px 12px; /* Tamanho menor para o botão */
+  font-size: 0.8rem; /* Tamanho da fonte menor */
+  border: none; /* Remove bordas */
+  border-radius: 5px; /* Borda arredondada */
+  cursor: pointer; /* Cursor de clique */
+  transition: all 0.3s ease; /* Suaviza transições */
+}
+
+/* Media Query para responsividade */
+@media (max-width: 600px) {
+  .container {
+    padding: 20px; /* Menos padding em telas pequenas */
+  }
+
+  h1 {
+    font-size: 28px; /* Tamanho do título menor */
+  }
+
+  .card {
+    max-width: 100%; /* Cartões ocupam a largura total */
+  }
+}

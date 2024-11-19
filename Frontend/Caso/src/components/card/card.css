@@ -1,0 +1,63 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff; /* Cor de fundo do cartão */
+    border-radius: 12px; /* Borda arredondada mais suave */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Sombra mais pronunciada */
+    padding: 20px; /* Aumenta o preenchimento para mais espaço */
+    margin: 16px;
+    width: 350px; /* Largura um pouco maior */
+    transition: transform 0.2s; /* Suaviza a transição ao passar o mouse */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Aumenta o tamanho levemente ao passar o mouse */
+}
+
+.card-title {
+    font-size: 1.8rem; /* Tamanho da fonte maior */
+    margin: 0 0 12px 0; /* Margem inferior ajustada */
+    color: #333; /* Cor do texto */
+    text-align: center; /* Centraliza o título */
+    font-weight: bold; /* Negrito */
+}
+
+.card-description {
+    font-size: 1rem; /* Tamanho da fonte */
+    margin: 0 0 20px 0; /* Margem inferior */
+    color: #555; /* Cor do texto mais suave */
+    text-align: center; /* Centraliza o texto */
+}
+
+.card-image {
+    width: 100%; /* Faz a imagem ocupar toda a largura do cartão */
+    border-radius: 8px; /* Borda arredondada para a imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-bottom: 16px; /* Espaçamento inferior da imagem */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave na imagem */
+}
+
+.card-date, .card-time {
+    font-size: 0.9rem; /* Tamanho da fonte menor */
+    color: #888; /* Cor do texto */
+    margin: 4px 0; /* Margem vertical */
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Adicionando um estilo para o botão de cadastro */
+.card-button {
+    padding: 12px 20px; /* Preenchimento do botão */
+    background-color: #3a44f8; /* Cor do fundo do botão */
+    color: white; /* Cor do texto */
+    border: none; /* Remove a borda padrão */
+    border-radius: 8px; /* Arredondamento suave */
+    font-size: 1rem; /* Tamanho do texto do botão */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    transition: background-color 0.3s, transform 0.2s; /* Suaviza as transições */
+}
+
+.card-button:hover {
+    background-color: #3038c5; /* Cor de fundo ao passar o mouse */
+    transform: translateY(-2px); /* Move o botão levemente para cima ao passar o mouse */
+}

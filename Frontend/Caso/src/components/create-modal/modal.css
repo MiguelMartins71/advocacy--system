@@ -1,0 +1,145 @@
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.6); /* Fundo escuro */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+.modal-overlay .modal-body {
+    background-color: white; /* Fundo branco */
+    padding: 24px; /* Espaçamento interno */
+    width: 90%; /* Um pouco mais responsivo */
+    max-width: 600px; /* Largura máxima */
+    border: 2px solid #fff; /* Borda branca */
+    border-radius: 16px; /* Bordas arredondadas */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra */
+    display: flex;
+    flex-direction: column; /* Direção em coluna */
+}
+
+.modal-overlay .modal-body h2 {
+    font-size: 28px; /* Tamanho do título */
+    color: #333; /* Cor do texto */
+    margin-bottom: 16px; /* Espaçamento */
+    text-align: center; /* Centraliza o título */
+}
+
+.modal-overlay .modal-body .input-container {
+    width: 100%; /* Largura total */
+    margin-bottom: 16px; /* Espaçamento entre os campos */
+}
+
+.modal-overlay .modal-body input {
+    padding: 12px; /* Preenchimento do campo */
+    border: 2px solid #c6c5c5; /* Cor da borda */
+    color: rgba(0, 0, 0, 0.8); /* Cor do texto */
+    font-size: 16px; /* Tamanho do texto */
+    border-radius: 8px; /* Bordas arredondadas */
+    width: 100%; /* Largura total */
+    transition: border-color 0.3s; /* Transição suave */
+}
+
+.modal-overlay .modal-body input:focus {
+    border-color: #3a44f8; /* Cor da borda ao focar */
+    outline: none; /* Remove contorno */
+}
+
+.modal-overlay .modal-body label {
+    color: #242424; /* Cor do rótulo */
+    font-weight: 600; /* Negrito */
+    margin-bottom: 8px; /* Espaçamento */
+    font-size: 16px; /* Tamanho do texto */
+}
+
+.modal-overlay .modal-body .btn-secondary {
+    padding: 12px; /* Preenchimento do botão */
+    background-color: #3a44f8; /* Cor do botão */
+    color: white; /* Cor do texto do botão */
+    border: none; /* Remove bordas */
+    border-radius: 8px; /* Bordas arredondadas */
+    font-size: 16px; /* Tamanho do texto do botão */
+    cursor: pointer; /* Indica que é clicável */
+    transition: background-color 0.3s, transform 0.2s; /* Transições */
+}
+
+.modal-overlay .modal-body .btn-secondary:hover {
+    background-color: #3038c5; /* Cor ao passar o mouse */
+    transform: translateY(-2px); /* Leve movimento ao passar o mouse */
+}
+
+.modal-overlay .modal-body .button-container {
+    display: flex; /* Exibe os botões em linha */
+    justify-content: center; /* Centraliza os botões */
+    margin-top: 24px; /* Espaço acima dos botões */
+}
+
+.input-group {
+    margin-bottom: 16px; /* Espaçamento entre os campos */
+}
+/* Alinha os campos de entrada e botões */
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+  
+  .input-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .input-group select,
+  .input-group textarea,
+  .input-group input {
+    padding: 10px;
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  
+  /* Alinha os botões */
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .buttons button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .buttons .btn-secondary {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .buttons .btn-danger {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  /* Estilo para o modal */
+  .modal-body {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+  }
+  
+  .modal-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  
